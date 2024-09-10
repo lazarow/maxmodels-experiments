@@ -1,0 +1,32 @@
+mv 0063-crossing_minimization-9-0.asp  p01.asp
+mv 0037-crossing_minimization-8-0.asp  p02.asp
+mv 0055-crossing_minimization-8-0.asp  p03.asp
+mv 0083-crossing_minimization-9-0.asp  p04.asp
+mv 0078-crossing_minimization-9-0.asp  p05.asp
+mv 0039-crossing_minimization-9-0.asp  p06.asp
+mv 0034-crossing_minimization-9-0.asp  p07.asp
+mv 0035-crossing_minimization-9-0.asp  p08.asp
+mv 0045-crossing_minimization-10-0.asp p09.asp 
+mv 0036-crossing_minimization-9-0.asp  p10.asp
+
+mv 0030-Maximal_Clique-400-0.asp p01.asp
+mv 0016-Maximal_Clique-300-0.asp p02.asp
+mv 0018-Maximal_Clique-325-0.asp p03.asp
+mv 0040-Maximal_Clique-450-0.asp p04.asp
+mv 0021-Maximal_Clique-350-0.asp p05.asp
+mv 0003-Maximal_Clique-225-0.asp p06.asp
+mv 0007-Maximal_Clique-250-0.asp p07.asp
+mv 0050-Maximal_Clique-600-0.asp p08.asp
+mv 0028-Maximal_Clique-375-0.asp p09.asp
+mv 0044-Maximal_Clique-475-0.asp p10.asp
+
+mv 0093-ValvesLocationProblem-450-0.asp p01.asp
+mv 0145-ValvesLocationProblem-466-0.asp p02.asp
+mv 0268-ValvesLocationProblem-710-0.asp p03.asp
+mv 0151-ValvesLocationProblem-166-0.asp p04.asp
+mv 0232-ValvesLocationProblem-210-0.asp p05.asp
+mv 0239-ValvesLocationProblem-166-0.asp p06.asp
+mv 0185-ValvesLocationProblem-466-0.asp p07.asp
+mv 0132-ValvesLocationProblem-710-0.asp p08.asp
+mv 0029-ValvesLocationProblem-450-0.asp p09.asp
+mv 0290-ValvesLocationProblem-73-0.asp p10.asp
