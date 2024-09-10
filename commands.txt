@@ -1,0 +1,4 @@
+time timelimit -t240 clingo -q p1.lp
+time gringo --output=smodels p1.lp | timelimit -t240 smodels 0
+time timelimit -t240 dlv --silent=2 p1.dl
+time gringo --output=smodels --warn=none p1.lp | timelimit -t240 maxmodels -e .env
