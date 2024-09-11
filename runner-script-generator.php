@@ -32,6 +32,9 @@ foreach ($problems as $problem => $paths) {
             if (file_exists("$path/p$i.lp")) {
                 $files[] = realpath($path) . "/p$i.lp";
             }
+            if (file_exists("$path/p$i.dl")) {
+                $files[] = realpath($path) . "/p$i.dl";
+            }
             if (file_exists("$path/p$i.asp")) {
                 $files[] = realpath($path) . "/p$i.asp";
             }
