@@ -19,14 +19,3 @@ mv 0007-Maximal_Clique-250-0.asp p07.asp
 mv 0050-Maximal_Clique-600-0.asp p08.asp
 mv 0028-Maximal_Clique-375-0.asp p09.asp
 mv 0044-Maximal_Clique-475-0.asp p10.asp
-
-mv 0093-ValvesLocationProblem-450-0.asp p01.asp
-mv 0145-ValvesLocationProblem-466-0.asp p02.asp
-mv 0268-ValvesLocationProblem-710-0.asp p03.asp
-mv 0151-ValvesLocationProblem-166-0.asp p04.asp
-mv 0232-ValvesLocationProblem-210-0.asp p05.asp
-mv 0239-ValvesLocationProblem-166-0.asp p06.asp
-mv 0185-ValvesLocationProblem-466-0.asp p07.asp
-mv 0132-ValvesLocationProblem-710-0.asp p08.asp
-mv 0029-ValvesLocationProblem-450-0.asp p09.asp
-mv 0290-ValvesLocationProblem-73-0.asp p10.asp
