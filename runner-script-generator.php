@@ -20,7 +20,7 @@ $solvers = [
     'clingo' => 'time timelimit -t240 clingo -q {{FILES}}',
     'dlv' => 'time timelimit -t240 dlv --silent=2 {{FILES}}',
     'smodels' => 'time gringo --output=smodels {{FILES}} | timelimit -t240 smodels 0',
-    'time gringo --output=smodels --warn=none {{FILES}} | timelimit -t240 maxmodels -e ~/workspace/asp-solvers/maxmodels/.env'
+    'time gringo --output=smodels --warn=none {{FILES}} | lp2normal-2.27 | timelimit -t240 maxmodels -e ~/workspace/asp-solvers/maxmodels/.env'
 ];
 
 echo "#!/bin/bash\n\n";
