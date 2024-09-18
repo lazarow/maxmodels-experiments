@@ -1,0 +1,4 @@
+v_in(X) | -v_in(X) :- v(X).
+e_out(X, Y) :- e(X, Y, W), v_in(X), v_in(Y).
+e_out(X, Y) :- e(X, Y, W), -v_in(X), -v_in(Y).
+:~ e(X, Y, W), e_out(X, Y). [W@1, X, Y]

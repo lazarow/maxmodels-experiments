@@ -12,15 +12,25 @@ $problems = [
         'dlv' => __DIR__ . '/max-cut-problem/models/dlv'
     ],
     'maximal-clique-problem' => [
-        '_default' => __DIR__ . '/maximal-clique-problem'
-    ]
+        '_default' => __DIR__ . '/maximal-clique-problem',
+        'doNotUseAugmenting' => true
+    ],
+    'minimum-test-set-problem' => [
+        '_default' => __DIR__ . '/max-cut-problem/models/clingo+smodels+maxmodels',
+        'dlv' => __DIR__ . '/max-cut-problem/models/dlv',
+        'doNotUseAugmenting' => true
+    ],
+    'minimum-test-set-problem' => [
+        '_default' => __DIR__ . '/max-cut-problem/models/clingo+smodels+maxmodels',
+        'dlv' => __DIR__ . '/max-cut-problem/models/dlv'
+    ],
 ];
 
 $solvers = [
     'clingo' => 'timelimit -t240 clingo -q {{FILES}}',
     'dlv' => 'timelimit -t240 dlv --silent=2 {{FILES}}',
     'smodels' => 'gringo --output=smodels {{FILES}} | timelimit -t240 smodels 0',
-    'maxmodels' => 'gringo --output=smodels --warn=none {{FILES}} | lp2normal-2.27 | timelimit -t240 maxmodels -e ~/workspace/asp-solvers/maxmodels/.env'
+    'maxmodels' => 'gringo --output=smodels {{FILES}} | lp2normal-2.27 | timelimit -t240 maxmodels -e ~/workspace/asp-solvers/maxmodels/.env'
 ];
 
 echo "#!/bin/bash\n\n";
@@ -40,6 +50,9 @@ foreach ($problems as $problem => $paths) {
             }
             if (file_exists("$path/encoding.asp")) {
                 $files[] = realpath($path) . "/encoding.asp";
+            }
+            if (isset($paths['doNotUseAugmenting']) && $paths['doNotUseAugmenting'] && $solver == 'maxmodels') {
+                $command .= ' -n';
             }
             echo "start=`date +%s%N`\n";
             echo strtr($command, ['{{FILES}}' => implode(' ', $files)]) . "\n";
