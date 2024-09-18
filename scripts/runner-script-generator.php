@@ -33,11 +33,11 @@ $problems = [
 ];
 
 $solvers = [
-    'clingo' => 'timelimit -t240 .' . realpath(__DIR__ . '/../scripts/run-clingo.sh') . ' {{FILES}}',
-    'dlv' => 'timelimit -t240 .' . realpath(__DIR__ . '/../scripts/run-clingo.sh') . ' {{FILES}}',
-    'smodels' => 'timelimit -t240 .' . realpath(__DIR__ . '/../scripts/run-smodels.sh') . ' {{FILES}}',
-    'maxmodels' => 'timelimit -t240 .' . realpath(__DIR__ . '/../scripts/run-maxmodels.sh') . ' {{FILES}}',
-    'lp2sat' => 'timelimit -t240 .' . realpath(__DIR__ . '/../scripts/run-lp2sat.sh') . ' {{FILES}}',
+    'clingo' => 'timelimit -t240 ' . realpath(__DIR__ . '/../scripts/run-clingo.sh') . ' {{FILES}}',
+    'dlv' => 'timelimit -t240 ' . realpath(__DIR__ . '/../scripts/run-clingo.sh') . ' {{FILES}}',
+    'smodels' => 'timelimit -t240 ' . realpath(__DIR__ . '/../scripts/run-smodels.sh') . ' {{FILES}}',
+    'maxmodels' => 'timelimit -t240 ' . realpath(__DIR__ . '/../scripts/run-maxmodels.sh') . ' {{FILES}}',
+    'lp2sat' => 'timelimit -t240 ' . realpath(__DIR__ . '/../scripts/run-lp2sat.sh') . ' {{FILES}}',
 ];
 
 echo "#!/bin/bash\n\n";
