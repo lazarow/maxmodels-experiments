@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gringo --output=smodels $1 $2 | smodels 0
+gringo --output=smodels --warn=none $1 $2 | smodels 0
