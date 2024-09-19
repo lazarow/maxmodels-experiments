@@ -66,7 +66,7 @@ foreach ($problems as $problem => $paths) {
                 $files[] = realpath($modelsPath) . "/encoding.lp";
             }
             if (isset($paths['doNotUseAugmenting']) && $paths['doNotUseAugmenting'] && $solver == 'maxmodels') {
-                $command = 'timelimit -t240 .' . realpath(__DIR__ . '/../scripts/run-maxmodels-without-augmenting.sh') . ' {{FILES}}';
+                $command = 'timelimit -t240 ' . realpath(__DIR__ . '/../scripts/run-maxmodels-without-augmenting.sh') . ' {{FILES}}';
             }
             echo "start=`date +%s%N`\n";
             echo strtr($command, ['{{FILES}}' => implode(' ', $files)]) . "\n";
