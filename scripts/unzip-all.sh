@@ -7,3 +7,4 @@ unzip $SCRIPT_DIR/../maximal-clique-problem/instances/instances.zip -d $SCRIPT_D
 unzip $SCRIPT_DIR/../max-cut-problem/instances/instances.zip -d $SCRIPT_DIR/../max-cut-problem/instances
 unzip $SCRIPT_DIR/../longest-path-problem/instances/instances.zip -d $SCRIPT_DIR/../longest-path-problem/instances
 unzip $SCRIPT_DIR/../weight-bounded-dominating-set/instances/instances.zip -d $SCRIPT_DIR/../weight-bounded-dominating-set/instances
+unzip $SCRIPT_DIR/../minimum-test-set-problem/instances/instances.zip -d $SCRIPT_DIR/../minimum-test-set-problem/instances
